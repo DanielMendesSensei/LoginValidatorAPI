@@ -30,7 +30,7 @@ POST /api/auth/signup
 {
   "username": "username_exemplo",
   "password": "senha123",
-  "confirmPassword": "senha123
+  "confirmPassword": "senha123"
 }
 ```
 #### Resposta
