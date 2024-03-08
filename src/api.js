@@ -16,8 +16,11 @@ dotenv.config();
 // };
 
 app.use(express.json());
-app.use("/api/auth", authRoutes);
 app.use(cors());
+app.use("/api/auth", authRoutes);
+
+// // Middleware para lidar com solicitações OPTIONS
+// app.options("*", cors());
 
 app.get("/", (req, res) => res.json({ message: "Hello World!" }));
 
