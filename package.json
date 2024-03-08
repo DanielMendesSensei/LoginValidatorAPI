@@ -5,9 +5,9 @@
   "main": "api.js",
   "type": "module",
   "scripts": {
-    "server": "node --watch src/api.js",
-    "serverN": "nodemon src/api.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "node src/api.js",
+    "dev": "node --watch src/api.js",
+    "dev-nodemon": "nodemon src/api.js"
   },
   "keywords": [
     "API",
